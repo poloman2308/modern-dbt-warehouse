@@ -166,6 +166,7 @@ This project is built to scale and evolve. Planned or ideal future improvements 
 ---
 
 ## 🧑‍💻 Author
+
 **Derek Acevedo**
 _Data Engineer \| SQL & dbt Enthusiast_
 
