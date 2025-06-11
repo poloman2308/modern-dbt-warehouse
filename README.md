@@ -114,6 +114,39 @@ dbt docs serve
 
 ---
 
+## 🔮 Future Enhancements
+
+This project is built to scale and evolve. Planned or ideal future improvements include:
+
+- **📦 Modular dbt Packages**
+  - Integrate with `dbt-utils`, `dbt-expectations`, and build custom reusable packages
+
+- **🧪 Advanced Data Validation**
+  - Implement row-level assertions, custom constraints, and null-check coverage using `dbt-expectations`
+
+- **🕵️ Data Freshness Monitoring**
+  - Add `dbt source freshness` and automate alerting for stale data
+
+- **🌐 Hosted Documentation**
+  - Deploy dbt docs via GitHub Pages or Netlify for live online access
+
+- **⚙️ CI/CD Automation**
+  - Use GitHub Actions to automate `dbt run`, `test`, and docs generation on pull requests
+
+- **📊 BI Tool Integration**
+  - Connect final marts to Power BI, Metabase, or Superset for dashboards
+
+- **🧠 Semantic Layer & Metrics**
+  - Define reusable business metrics using the dbt `metrics:` feature (dbt ≥ 1.5)
+
+- **💾 Incremental Materialization**
+  - Convert large fact tables to `incremental` mode for optimized rebuilds
+
+- **📈 Performance Optimization**
+  - Benchmark model runtime and add indexes or materialized views where necessary
+
+---
+
 ## 🧑‍💻 Author
 **Derek Acevedo**
 Data Engineer | SQL & dbt Enthusiast
@@ -121,4 +154,3 @@ Data Engineer | SQL & dbt Enthusiast
 🔗 [LinkedIn](https://www.linkedin.com/in/derekacevedo86)
 🔗 [GitHub](https://www.github.com/poloman2308)
 
----
