@@ -114,6 +114,24 @@ dbt docs serve
 
 ---
 
+## 🧩 Component Glossary
+
+| Component                | Description                                                                 |
+|--------------------------|-----------------------------------------------------------------------------|
+| **`models/src/`**        | Source definitions that reference raw tables from the `raw` schema         |
+| **`models/staging/`**    | Cleaned, renamed, and typed 1:1 models for each source table                |
+| **`models/intermediate/`** | Business logic models that combine and transform data from staging models  |
+| **`models/marts/`**      | Final analytics models (facts/dimensions) used by BI tools or dashboards   |
+| **`snapshots/`**         | Models that track historical changes to data using dbt's SCD Type 2 logic  |
+| **`macros/`**            | Reusable logic blocks written in Jinja (e.g., currency conversion, safe division) |
+| **`schema.yml`**         | YAML files used to document and test models and sources                    |
+| **`dbt_project.yml`**    | Main project config file: defines model folders, materializations, and settings |
+| **`target/`**            | Build artifacts created by dbt (ignored via `.gitignore`)                  |
+| **`profiles.yml`**       | DB connection settings (stored in `~/.dbt/`, not in repo)                  |
+| **`dbt docs`**           | Auto-generated docs and DAG viewer (run with `dbt docs generate && serve`) |
+
+---
+
 ## 🔮 Future Enhancements
 
 This project is built to scale and evolve. Planned or ideal future improvements include:
@@ -149,7 +167,7 @@ This project is built to scale and evolve. Planned or ideal future improvements 
 
 ## 🧑‍💻 Author
 **Derek Acevedo**
-Data Engineer | SQL & dbt Enthusiast
+_Data Engineer \| SQL & dbt Enthusiast
 
 🔗 [LinkedIn](https://www.linkedin.com/in/derekacevedo86)
 🔗 [GitHub](https://www.github.com/poloman2308)
